@@ -21,6 +21,15 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#41C379">
   <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "0b42db2c-967f-452c-b626-72247782484a",
+      });
+    });
+  </script>
 </head>
 
 <body id="top">
@@ -120,7 +129,7 @@
       <ul id="stats" class="nospace group"></ul>
     </section>
   </div>
-<!--
+  <!--
   <div class="wrapper coloured">
     <section id="testimonials" class="hoc container clear">
 
@@ -248,7 +257,7 @@
           <li><a href="#">Leo est tincidunt est sed</a></li>
         </ul>
       </div>
-     <!-- <div class="one_quarter">
+      <!-- <div class="one_quarter">
         <h6 class="heading">Nunc sapien varius</h6>
         <ul class="nospace clear latestimg">
           <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
