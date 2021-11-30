@@ -26,6 +26,7 @@ workbox.routing.registerRoute(
   new RegExp('\\.json'),
   new workbox.strategies.NetworkFirst()
 );
+
 // // Files to cache
 // const cacheName = 'app-V1';
 
