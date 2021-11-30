@@ -14,7 +14,7 @@ workbox.precaching.precacheAndRoute([
   './characters.html',
   './locations.html'
 ]);
-//Registros de los archivos que no se han guardado en el precachin con un nuevo nombre
+//Registros de los archivos que no se han guardado en el precachin
 workbox.routing.registerRoute(
   new RegExp('\\.*'),
   new workbox.strategies.CacheFirst({
